@@ -1,0 +1,36 @@
+// #mainCont 
+// #aboutCont
+// #contactInfo
+// #referCont
+// #scriptCont
+// #portCont
+
+// main__cont
+// about__cont
+// refer__cont
+// port__cont
+
+// main__cont
+#mainCont {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__cont {
+    color: #fff;
+    font-size: 10vw;
+    line-height: 0.85;
+    letter-spacing: -0.0275em;
+    transition: all 2s;
+    text-transform: uppercase;
+    font-family: 'saol';
+
+    .l2 {
+        margin-left: 9vw;
+    } 
+    .l3 {
+        margin-left: 18vw;
+    }
+}
