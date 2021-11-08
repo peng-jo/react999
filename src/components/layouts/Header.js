@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 function Header(){
     return (
         <header id="header">
-            <div className="header__port"><Link href="/portfolio">Portfolio</Link></div>
-            <div className="header__logo"><Link href="/">Peng-jo</Link></div>
+            <div className="header__port"><Link to="/portfolio">Portfolio</Link></div>
+            <div className="header__logo"><Link to="/">JOBEOMSU</Link></div>
             <nav className="header__menu">
                 <ul>
                     <li><Link to="/about">About</Link></li>
@@ -13,10 +13,11 @@ function Header(){
                     <li><Link to="/youtube">Youtube</Link></li>
                     <li><Link to="/script">Script</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/Portfolio">Portfolio</Link></li>
                 </ul>
-                <a href="/" className="ham">
+                <Link to="/" className="ham">
                     <span className="sr-only">menu</span>
-                </a>
+                </Link>
             </nav>
         </header>
     )
