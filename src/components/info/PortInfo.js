@@ -8,7 +8,7 @@ function PortInfo({id, title, category, link, image}){
                 <div className="pImg">
                     <img src={image} alt={title}/>
                 </div>
-                <div class="pText">
+                <div className="pText">
                     <h3>{title}</h3>
                     <p>{category}</p>
                 </div>

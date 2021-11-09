@@ -5,7 +5,7 @@ import Contents from '../layouts/Contents';
 import WrapTitle from '../layouts/WrapTitle';
 import ContInfo from '../layouts/ContInfo';
 import PortInfo from '../info/PortInfo';
-
+import Loading from '../layouts/Loading';
 import axios from 'axios';
 
 
@@ -42,9 +42,7 @@ class Portfolio extends React.Component {
         return (
             <div>{isLoading ? 
                 (
-                    <div className="loading">
-                        <span>로딩중......</span>
-                    </div>
+                    <Loading />
                 ) : (
                     <div>
                         <Header />
