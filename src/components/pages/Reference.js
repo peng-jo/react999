@@ -72,12 +72,10 @@ class Reference extends React.Component {
                                     </div>
                                 </div>
                             </section>
-
                                 <ContInfo/>
                             </Contents>
                             <Footer />
                         </div>
-
                     )
                 }
             </div>

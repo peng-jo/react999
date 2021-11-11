@@ -30,8 +30,8 @@ class ReferDetail extends React.Component {
                     <Header />
                         <Contents>
                         <section id="referCont">
-                            <div class="container">
-                                <div class="refer__detail pt200">
+                            <div className="container">
+                                <div className="refer__detail pt200">
                                     <h3>{title}</h3>
                                     <p>{desc2}</p>
                                     <table>
@@ -74,7 +74,7 @@ class ReferDetail extends React.Component {
                                             ))
                                         }
                                     </ul>
-                                    <Link class="list-btn" to="./reference">목록보기</Link>
+                                    <Link className="list-btn" to="./reference">목록보기</Link>
                                 </div>
                                 
                             </div>
