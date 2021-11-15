@@ -57,7 +57,6 @@ class Portfolio extends React.Component {
                                                 id={port.id}
                                                 title={port.title}
                                                 category={port.category}
-                                                link={port.link}
                                                 image={port.image}
                                             />
                                         ))}

@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import Contents from '../layouts/Contents';
+import PropTypes from 'prop-types';
 
 import Loading from '../layouts/Loading';
 import WrapTitle from '../layouts/WrapTitle';
@@ -62,8 +63,9 @@ class Reference extends React.Component {
                                        <div className="table">
                                            <h3>HTML</h3>
                                             <ul>
-                                                {refers.map((refer)=>(
-                                                    <ReferInfo 
+                                                {refers.map((refer,index)=>(
+                                                    <ReferInfo
+                                                        key = {index}
                                                         refer = {refer}
                                                     />   
                                                 ))}
@@ -83,5 +85,8 @@ class Reference extends React.Component {
     }
 }
 
+ReferInfo.propTypes = {
+    refer : PropTypes.object.isRequired
+}
 
 export default Reference;
