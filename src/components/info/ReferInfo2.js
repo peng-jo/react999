@@ -30,7 +30,7 @@ ReferInfo2.propTypes = {
         version: PropTypes.string.isRequired,
         use: PropTypes.string.isRequired,
         definition: PropTypes.array.isRequired,
-        property: PropTypes.object.isRequired,
+        property: PropTypes.array.isRequired,
     })
 
 }

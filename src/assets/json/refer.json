@@ -481,7 +481,6 @@
             "align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
           ],
           "property": [
-            {"sub": "stretch", "desc": "요소의 정렬 상태를 기본으로 설정합니다."},
             {"sub": "center", "desc": "요소의 상하 정렬 상태를 가운데로 설정합니다"},
             {"sub": "flex-start", "desc": "요소의 상하 정렬 상태를 위쪽으로 설정합니다."},
             {"sub": "flex-end", "desc": "요소의 정렬 상태를 기본으로 설정합니다."},
@@ -510,7 +509,7 @@
             {"sub": "center", "desc": "요소의 정렬 상태를 가운데로 설정합니다."},
             {"sub": "flex-start", "desc": "요소의 정렬 상태를 위쪽으로 설정합니다."},
             {"sub": "flex-end", "desc": "요소의 정렬 상태를 아래쪽으로 설정합니다."},
-            {"sub": "stretch", "desc": "요소의 정렬 상태를 폰트를 기준으로 설정합니다."}
+            {"sub": "baseline", "desc": "요소의 정렬 상태를 폰트를 기준으로 설정합니다."}
           ]
         },
         {
@@ -1076,7 +1075,7 @@
             "link": "https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout"
         },
         {
-            "id": 17,
+            "id": 15,
             "title": ".endsWith()",
             "desc2": ".endsWith() 메서드는 문자열에서 특정 문자열로 끝나는지를 확인합니다.",
             "returns" : "true or false",
@@ -1087,7 +1086,7 @@
             "link" : "https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
         },
         {
-            "id": 18,
+            "id": 16,
             "title": ".forward()",
             "desc2": ".forward() 메서드는 다음 방문한 페이지로 이동합니다.",
             "returns" : "-",
@@ -1098,7 +1097,7 @@
             "link" : "https://developer.mozilla.org/en-US/docs/Web/API/History/forward"
         },
         {
-            "id": 19,
+            "id": 17,
             "title": ".fill()",
             "desc2": ".fill() 메서드는 배열의 시작 인덱스부터 끝 인덱스까지 하나의 값으로 채웁니다.",
             "returns" : "새로운 배열 객체",
@@ -1109,7 +1108,7 @@
             "link" : "https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"
         },
         {
-            "id": 20,
+            "id": 18,
             "title": ".filter()",
             "desc2": ".filter() 메서드는 조건에 맞는 요소를 새로운 배열로 반환합니다.",
             "returns" : "새로운 배열",
@@ -1120,7 +1119,7 @@
             "link" : "https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
         },
         {
-            "id": 21,
+            "id": 19,
             "title": ".find()",
             "desc2": ".find() 메서드는 주어진 조건에 만족하는 첫 번째 요소의 값을 반환합니다.",
             "returns" : "조건에 맞는 값 또는 값이 없으면 undefined",
@@ -1131,7 +1130,7 @@
             "link" : "https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
         },
         {
-            "id": 22,
+            "id": 20,
             "title": ".findIndex()",
             "desc2": ".findIndex() 메서드는 주어진 조건에 만족하는 첫 번째 요소 인덱스 값을 반환합니다.",
             "returns" : "배열의 인덱스 또는 값이 없으면 -1",
@@ -1142,7 +1141,7 @@
             "link" : "https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"
         },
         {
-            "id": 23,
+            "id": 21,
             "title": ".flat()",
             "desc2": ".flat() 메서드는 모든 하위 배열까지 하나의 배열로 반환합니다.",
             "returns" : "새로운 배열",
@@ -1153,7 +1152,7 @@
             "link" : "https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"
         },
         {
-            "id": 24,
+            "id": 22,
             "title": ".forEach()",
             "desc2": ".forEach() 메서드는 배열 요소 각각에 대해 실행합니다.",
             "returns" : "undefined",
@@ -1164,7 +1163,7 @@
             "link" : "https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
         },
         {
-            "id": 25,
+            "id": 23,
             "title": ".focus()",
             "desc2": ".focus() 현재 윈도우로 포커스를 설정합니다.",
             "returns" : "-",
