@@ -9,6 +9,7 @@ import Loading from '../layouts/Loading';
 import WrapTitle from '../layouts/WrapTitle';
 import ReferInfo from '../info/ReferInfo';
 import ReferInfo2 from '../info/ReferInfo2';
+import ReferInfo3 from '../info/ReferInfo3';
 
 import ContInfo from '../layouts/ContInfo';
 
@@ -57,9 +58,16 @@ class Reference extends React.Component {
                         refer = {refer}
                     />   
                 ))
-                default :
+            case 'JAVASCRIPT' :
+                return refers.jsRefer.map((refer,index)=>(
+                    <ReferInfo2
+                        key = {index}
+                        refer = {refer}
+                    />   
+                ))    
+            default :
                 return refers.htmlRefer.map((refer,index)=>(
-                    <ReferInfo
+                    <ReferInfo3
                         key = {index}
                         refer = {refer}
                     />   
@@ -94,7 +102,7 @@ class Reference extends React.Component {
                                     <WrapTitle text={['Reference','book']}/>  
                                     <div className="refer__cont">
                                        <div className="table">
-                                           <h3 onClick={this.onClick}>HTML</h3><h3 onClick={this.onClick}>CSS</h3>
+                                           <h3 onClick={this.onClick}>HTML</h3><h3 onClick={this.onClick}>CSS</h3><h3 onClick={this.onClick}>JAVASCRIPT</h3>
                                             <ul>
                                                 {
                                                     this.renderSwitch(refers, select)

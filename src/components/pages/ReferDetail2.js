@@ -19,20 +19,7 @@ class ReferDetail extends React.Component {
             history.push('./reference');
         }
     }
-    loop = (property)=>{
-        let array = []
-        for(let i in property){
-            array.push(
-                <tr key={i.toString()}>
-                    <th>{i}</th>
-                    <td>{property[i]}</td>
-                </tr>
-            )
-        }
-        
-        console.log(array)
-        return array;
-    }
+
     render(){
         const { location } = this.props;
         const { definition, use, version, title, desc2, property, grammer, apply, basic} = this.props.location.state.refer;
@@ -99,7 +86,12 @@ class ReferDetail extends React.Component {
                                     </thead>
                                     <tbody>
                                         {
-                                            this.loop(property)
+                                            property.map((el)=>(
+                                                <tr key={el.sub.toString()}>
+                                                    <th>{el.sub}</th>
+                                                    <td>{el.desc}</td>
+                                                </tr>
+                                            ))
                                         }
                                     </tbody>
                                         
