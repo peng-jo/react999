@@ -8,6 +8,8 @@ import PropTypes from 'prop-types';
 import Loading from '../layouts/Loading';
 import WrapTitle from '../layouts/WrapTitle';
 import ReferInfo from '../info/ReferInfo';
+import ReferInfo2 from '../info/ReferInfo2';
+
 import ContInfo from '../layouts/ContInfo';
 
 
@@ -24,19 +26,43 @@ import ContInfo from '../layouts/ContInfo';
 class Reference extends React.Component {
     state = {
         isLoading: true,
-        refers: []
+        refers: {},
+        select: ""
     }
 
     getRefer = async () => {
         const {
             data: {
-                data : {
-                    htmlRefer
-                }
+                data 
             }
         } = await axios.get("https://peng-jo.github.io/react999/src/assets/json/refer.json");
 
-        this.setState({refers:htmlRefer,isLoading:false})
+        this.setState({refers:data,isLoading:false})
+    }
+
+    renderSwitch = (refers, select)=>{
+        
+        switch(select){
+            case 'HTML' :
+                return refers.htmlRefer.map((refer,index)=>(
+                    <ReferInfo
+                        key = {index}
+                        refer = {refer}
+                    />   
+                ))
+            case 'CSS' :
+                return refers.cssRefer.map((refer,index)=>(
+                    <ReferInfo2
+                        key = {index}
+                        refer = {refer}
+                    />   
+                ))
+        }
+            
+    }
+
+    onClick = (e) =>{
+        this.setState({select:e.target.textContent})
     }
 
     componentDidMount(){
@@ -45,7 +71,7 @@ class Reference extends React.Component {
         },2000)
     }
     render(){
-        const {isLoading, refers} = this.state;
+        const {isLoading, refers, select} = this.state;
         
         return (
             <div>
@@ -61,14 +87,11 @@ class Reference extends React.Component {
                                     <WrapTitle text={['Reference','book']}/>  
                                     <div className="refer__cont">
                                        <div className="table">
-                                           <h3>HTML</h3>
+                                           <h3 onClick={this.onClick}>HTML</h3><h3 onClick={this.onClick}>CSS</h3>
                                             <ul>
-                                                {refers.map((refer,index)=>(
-                                                    <ReferInfo
-                                                        key = {index}
-                                                        refer = {refer}
-                                                    />   
-                                                ))}
+                                                {
+                                                    this.renderSwitch(refers, select)
+                                                }
                                             </ul>
                                        </div>
                                     </div>
