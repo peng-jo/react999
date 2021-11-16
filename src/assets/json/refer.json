@@ -1,6 +1,5 @@
 {
     "data": {
-      "type": "html",
       "htmlRefer": [
         {
           "id": 1,
@@ -465,6 +464,477 @@
             "오디오 플레이어 개별 구성 요소(버튼, 아이콘, 글꼴 등)는 스타일을 지정할 수 없으며, 컨트롤 디자인은 브라우저마다 다릅니다."
             ]
         }
+      ],
+      "cssRefer": [
+        {
+          "id": 1,
+          "title": "align-content",
+          "desc1": "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+          "desc2": "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+          "default": "align-content : stretch",
+          "apply": "flexbox",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "align-content : stretch | center | flex-start | flex-end | space-between | space-around",
+          "definition": [
+            "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+            "align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
+          ],
+          "property" : {
+            "stretch" : "요소의 정렬 상태를 기본으로 설정합니다.",
+            "center" : "요소의 상하 정렬 상태를 가운데로 설정합니다.",
+            "flex-start" : "요소의 상하 정렬 상태를 위쪽으로 설정합니다.",
+            "flex-end" : "요소의 상하 정렬 상태를 아래쪽으로 설정합니다.",
+            "space-between" : "요소와 요소사이의 간격을 위쪽과 아래쪽을 기준으로 설정합니다.",
+            "space-around" : "요소의 정렬 상태를 기본으로 설정합니다.",
+            "inherit" : "align-content의 속성 값을 상위요소한테 상속받습니다."
+          }
+        },
+        {
+          "id": 2,
+          "title": "align-items",
+          "desc1": "align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
+          "desc2": "align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
+          "default": "align-items : stretch",
+          "apply": "flexbox",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "align-items : stretch | center | flex-start | flex-end | baseline",
+          "definition": [
+            "align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
+            "align-content 속성은 컨테이너의 높이 값을 기준으로 정렬하고 align-items 속성은 아이템의 높이 값을 기준으로 정렬합니다."
+          ],
+          "property" : {
+            "stretch" : "요소의 정렬 상태를 기본 값으로 설정합니다.",
+            "center" : "요소의 정렬 상태를 가운데로 설정합니다.",
+            "flex-start" : "요소의 정렬 상태를 위쪽으로 설정합니다.",
+            "flex-end" : "요소의 정렬 상태를 아래쪽으로 설정합니다.",
+            "baseline" : "요소의 정렬 상태를 폰트를 기준으로 설정합니다."
+          }
+        },
+        {
+          "id": 3,
+          "title": "align-self",
+          "desc1": "align-self 속성은 개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.",
+          "desc2": "align-self 속성은 개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.",
+          "default": "align-self : auto",
+          "apply": "flexbox",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "align-self: auto | stretch | center | flex-start | flex-end | baseline",
+          "definition": [
+            "align-self 속성은 개별적인 플렉스 아이템의 정렬 상태를 설정합니다.",
+            "align-self 속성은 플렉스 아이템에 설정하고, align-item와 align-content는 플렉스 컨테이너에 설정합니다."
+          ],
+          "property" : {
+            "auto" : "요소의 정렬 상태를 기본으로 설정합니다.",
+            "stretch" : "요소의 가로 영역 값을 최대로 설정합니다.",
+            "center" : "요소의 정렬을 가운데로 설정합니다.",
+            "flex-start" : "요소의 정렬을 시작점으로 설정합니다.",
+            "flex-end" : "요소의 정렬을 끝점으로 설정합니다.",
+            "baseline" : "요소의 정렬을 폰트를 기준으로 설정합니다.",
+            "inherit" : "요소의 속성 값을 상위 요소한테 상속받습니다."
+          }
+        },
+        {
+          "id": 4,
+          "title": "all",
+          "desc1": "all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.",
+          "desc2": "all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.",
+          "default": "all : auto",
+          "apply": "모든 속성",
+          "version": "CSS3",
+          "use": "☆☆☆",
+          "grammer": "all : initial | inherit | unset | revert",
+          "definition": [
+            "all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.",
+            "all 속성은 모든 요소에 설정 가능합니다."
+          ],
+          "property" : {
+            "initial" : "요소의 모든 속성을 초기화합니다.",
+            "inherit" : "요소의 속성을 상속받어 적용합니다.",
+            "unset" : "상속되는 경우는 상속값으로, 그렇지 않으면 초기값으로 설정됩니다.",
+            "revert" : "선언된 CSS따라 다르게 적용됩니다."
+          }
+        },
+        {
+          "id": 5,
+          "title": "animation",
+          "desc1": "animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.",
+          "desc2": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "default": "animation-name: none<br>animation-duration: 0s<br>animation-timing-function: ease<br>animation-delay: 0s<br>animation-iteration-count: 1<br>animation-direction: normal<br>animation-fill-mode: none<br>animation-play-state: running",
+          "apply": "상속안됨",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "animation: @keyframes name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state;",
+          "definition": [
+            "animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다."
+          ],
+          "property" : {
+            "name" : "애니메이션 keyframe 이름을 설정합니다.",
+            "duration" : "애니메이션 움직임 시간을 설정합니다.",
+            "timing-function" : "애니메이션 움직임 속도를 정의합니다.",
+            "delay" : "애니메이션이 로드된 후 애니메이션이 시작될 때 까지의 시간을 나타냅니다.",
+            "iteration-count" : "애니메이션 반복 횟수 설정합니다.",
+            "direction" : "애니메이션 움직임 방향을 설정합니다.",
+            "fill-mode" : "애니메이션이 끝난 후의 상태를 설정합니다.",
+            "play-state" : "애니메이션 진행상태를 설정합니다."
+          }
+        },
+        {
+          "id": 6,
+          "title": "animation-delay",
+          "desc1": "animation-delay 속성은 애니메이션 지연 시간을 설정합니다.",
+          "desc2": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "default": "animation-delay: 0s;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "animation-delay : time | inherit;",
+          "definition": [
+            "animation-delay 속성은 애니메이션 지연 시간을 설정합니다."
+          ],
+          "property" : {
+            "time" : "요소가 로드된 후 애니메이션이 시작될 때 까지의 시간을 설정합니다.",
+            "inherit" : "부모 요소의 속성을 상속받습니다."
+          }
+        },
+        {
+          "id": 7,
+          "title": "animation-direction",
+          "desc1": "animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.",
+          "desc2": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "default": "animation-direction : normal;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "animation-direction : normal | reverse | alternate | alternate-reverse | inherit;",
+          "definition": [
+            "animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.",
+            "animation-direction 속성에는 움직임 속성을 두개 이상 설정 할 수 있습니다."
+          ],
+          "property" : {
+            "normal" : "애니메이션의 방향을 정상적(기본값)으로 설정합니다.",
+            "reverse" : "애니메이션 움직임의 방향을 역방향으로 설정합니다.",
+            "alternate" : "애니메이션 움직임의 방향을 순방향을 진행 후 역방향으로 설정합니다.",
+            "alternate-reverse" : "애니메이션 움직임의 방향을 역방향을 진행 후 순방향으로 설정합니다.",
+            "inherit" : "애니메이션 움직임을 상위 요소한테 상속받습니다."
+          }
+        },
+        {
+          "id": 8,
+          "title": "<CSS>",
+          "desc1": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "desc2": "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.",
+          "default": "animation-duration : 0s;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "animation-duration : time | inherit;",
+          "definition": [
+            "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.",
+            "animation-duration 속성에는 시간 속성을 두개 이상 설정 할 수 있습니다."
+          ],
+          "property" : {
+            "time" : "애니메이션의 작동 시간을 설정합니다.",
+            "inherit" : "애니메이션 움직임을 상위 요소한테 상속받습니다."
+          }
+        },
+        {
+          "id": 9,
+          "title": "<animation-fill-mode>",
+          "desc1": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "desc2": "animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.",
+          "default": "animation-fill-mode : none;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★☆",
+          "grammer": "animation-duration : time | inherit;",
+          "definition": [
+            "animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다."
+          ],
+          "property" : {
+            "none"	:"애니메이션이 끝난 후 상태를 설정하지 않습니다.",
+            "forwards"	:"애니메이션이 끝난 후 그 지점에 그대로 있습니다.",
+            "backwards"	:"애니메이션이 끝난 후 시작점으로 돌아옵니다.",
+            "both"	:"애니메이션이의 앞 뒤 결과를 조합하여 설정합니다.",
+            "inherit"	:"애니메이션의 상태를 상위 요소한테 상속받습니다."
+          }
+        },
+        {
+          "id": 10,
+          "title": "<animation-iteration-count>",
+          "desc1": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "desc2": "animation-iteration-count 속성은 애니메이션 반복 횟수 설정합니다.",
+          "default": "animation-iteration-count : none;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "animation-iteration-count : number | infinite | inherit;",
+          "definition": [
+            "animation-iteration-count 속성은 애니메이션 반복 횟수 설정합니다."
+          ],
+          "property" : {
+            "number":"애니메이션 반복 횟수를 숫자를 통해 설정합니다.",
+            "infinite":"애니메이션 반복 횟수를 무한으로 설정합니다.",
+            "inherit":"애니메이션 속성을 상속받습니다."
+          }
+        },
+        {
+          "id": 11,
+          "title": "<animation-name>",
+          "desc1": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "desc2": "animation-name 속성은 애니메이션 keyframe 이름을 설정합니다.",
+          "default": "animation-name : none;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammer": "animation-name : keyframe name | none | inherit;",
+          "definition": [
+            "animation-name 속성은 애니메이션 keyframe 이름을 설정합니다."
+          ],
+          "property" : {
+            "keyframe name":	"움직임을 표현한 Keyframes의 이름을 설정합니다.",
+            "none":	"애니메이션 움직임을 적용하지 않습니다.",
+            "inherit":	"애니메이션 속성을 상속받습니다."
+          }
+        },
+        {
+          "id": 12,
+          "title": "<animation-play-state>",
+          "desc1": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "desc2": "animation-play-state 속성은 애니메이션 진행상태를 설정합니다.",
+          "default": "animation-play-state : running;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★☆",
+          "grammer": "animation-name : keyframe name | none | inherit;",
+          "definition": [
+            "animation-play-state 속성은 애니메이션 진행상태를 설정합니다."
+          ],
+          "property" : {
+            "paused":	"애니메이션의 움직임을 정지시킵니다.",
+            "running": "애니메이션을 움직이게 합니다.",
+            "inherit": "애니메이션 속성을 상속받습니다."
+          }
+        },
+        {
+          "id": 13,
+          "title": "<animation-timing-function>",
+          "desc1": "애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.",
+          "desc2": "animation-play-state 속성은 애니메이션 진행상태를 설정합니다.",
+          "default": "animation-timing-function : linear;",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★★☆",
+          "grammer": "animation-timing-function : linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int,start|end) | cubic-bezier(n,n,n,n) | inherit;",
+          "definition": [
+            "animation-timing-function 속성은 애니메이션 움직임의 속도를 설정합니다."
+          ],
+          "property" : {
+            "linear":	"처음 속도와 마지막 속도가 일정합니다.",
+            "ease": "처음엔 천천히 시작하여 빨라지고 마지막에 다시 느려집니다.",
+            "ease-in": "천천히 시작되어 정상 속도가 됩니다.",
+            "ease-out": "마지막에 천천히 속도를 줄여 끝납니다.",
+            "ease-in-out": "천천히 시작되어 정상 속도가 되었다가 마지막에 느려집니다.",
+            "step-start": "애니메이션을 시작점에서만 표현됩니다.",
+            "step-end": "애니메이션을 끝점에서만 표현됩니다.",
+            "steps(int, start|end)": "애니메이션을 단계별로 설정합니다.",
+            "cubic-bezier(n,n,n,n)": "베지어 곡선값을 만들어서 속도를 설정합니다.",
+            "inherit": "애니메이션 움직임을 상위 요소한테 상속받습니다."
+          }
+        },
+        {
+          "id": 14,
+          "title": "<backdrop-filter>",
+          "desc1": "backdrop-filter 속성은 배경에 그래픽 효과를 설정합니다.",
+          "desc2": "backdrop-filter 속성은 배경에 그래픽 효과를 설정합니다.",
+          "default": "backdrop-filter : none",
+          "apply": "animations",
+          "version": "CSS3",
+          "use": "★☆☆",
+          "grammer": "backdrop-filter : none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | sepia() | saturate()",
+          "definition": [
+            "backdrop-filter 속성은 배경에 그래픽 효과를 설정합니다.",
+            "요소의 배경을 반투명 설정하여야 효과를 확인할 수 있습니다."
+          ],
+          "property" : {
+            "none":	"이미지의 아무런 효과를 주지 않습니다.",
+            "blur(px)":	"이미지의 블러 효과를 설정합니다.",
+            "brightness(%)":"이미지의 밝고 어두움 정도를 설정합니다.",
+            "contrast(%)":	"이미지의 대비를 설정합니다.",
+            "drop-shadow()":	"이미지의 그림자를 설정합니다.",
+            "grayscale(%)":	"이미지의 그레이스케일를 설정합니다.",
+            "hue-rotate(deg)":	"이미지의 색조를 설정합니다.",
+            "invert(%)":	"이미지를 반전합니다.",
+            "opacity(%)":	"이미지의 투명도를 설정합니다.",
+            "saturate(%)":	"이미지의 채도를 설정합니다.",
+            "sepia(%)":	"이미지의 세피아 효과를 설정합니다.",
+            "url()":	"이미지의 경로를 설정합니다.",
+            "inherit":	"상위 요소의 속성 값을 상속받습니다."
+          }
+        },
+        {
+          "id": 15,
+          "title": "<backface-visibility>",
+          "desc1": "backface-visibility 속성은 요소의 뒷면을 설정합니다.",
+          "desc2": "backface-visibility 속성은 요소의 뒷면을 설정합니다.",
+          "default": "backface-visibility : visible;",
+          "apply": "-",
+          "version": "CSS3",
+          "use": "★☆☆",
+          "grammar" : "backface-visibility : visible | hidden;",
+          "definition": [
+              "backface-visibility 속성은 요소의 뒷면을 설정합니다.",
+              "2D 상태에서는 뒷면을 확인할 수 없지만 3D 공간에서는 뒷면을 확인 할 수 있습니다."
+          ],
+          "property" : {
+              "visible" : "요소의 뒷면을 보이도록 설정합니다.",
+              "hidden" : "요소의 뒷면을 보이지 않도록  설정합니다."
+          }
+      },
+      {
+          "id": 16,
+          "title": "<background>",
+          "desc1": "background 속성은 백그라운드 속성을 일괄적으로 설정합니다.",
+          "desc2": "background 속성은 백그라운드 속성을 일괄적으로 설정합니다.",
+          "default": "background-attachment: scroll;<br> background-clip: border-box;<br> background-color: transparent;<br> background-image: none;<br> background-origin: padding-box;<br> background-position: 0% 0%;<br> background-repeat: repeat;<br> background-size: auto auto;",
+          "apply": "background",
+          "version": "CSS3",
+          "use": "★★★",
+          "grammar" : "background : background-attachment | background-clip | background-color | background-image | background-origin | background-position | background-repeat | background-size | inherit;",
+          "definition": [
+              "background 백그라운드 속성을 일괄적으로 설정합니다."
+          ],
+          "property" : {
+              "background-attachment" : "배경 이미지의 고정 여부를 설정합니다.",
+              "background-clip" : "백그라운드 이미지의 위치 기준점을 설정합니다.",
+              "background-color" : "백그라운드 색을 설정합니다.",
+              "background-image" : "백그라운드 이미지 및 배경 속성을 설정합니다.",
+              "background-origin" : "백그라운드 이미지의 위치 기준점을 설정합니다.",
+              "background-position" : "백그라운드 이미지의 위치 영역을 설정합니다.",
+              "background-repeat" : "백그라운드 이미지 반복 여부를 설정합니다",
+              "background-size" : "백그라운드 이미지 사이즈를 설정합니다.",
+              "inherit" : "속성 값을 상위 요소한테 상속받습니다."
+          }
+      },
+      {
+          "id": 17,
+          "title": "<background-attachment>",
+          "desc1": "background-attachment 속성은 배경 이미지의 고정 여부를 설정합니다.",
+          "desc2": "background-attachment 속성은 배경 이미지의 고정 여부를 설정합니다.",
+          "default": "background-attachment: scroll;",
+          "apply": "background",
+          "version": "CSS1",
+          "use": "★★☆",
+          "grammar" : "background-attachment : scroll | fixed | local;",
+          "definition": [
+              "background-attachment 속성은 배경 이미지의 고정 여부를 설정합니다.",
+              "background-attachment 속성의 multiple backgrounds는 익스플로러9 버전 이상부터 지원됩니다."
+          ],
+          "property" : {
+              "scroll" : "배경이미지와 콘텐츠를 표현하는 기본값입니다.",
+              "fixed" : "배경이미지를 고정하고, 콘텐츠만 움직입니다.",
+              "local" : "배경이미지와 콘텐츠가 같이 움직입니다."
+          }
+      },
+      {
+          "id": 18,
+          "title": "<background-blend-mode>",
+          "desc1": "background-blend-mode 속성은 배경을 혼합했을 때의 상태를 설정합니다.",
+          "desc2": "background-blend-mode 속성은 배경을 혼합했을 때의 상태를 설정합니다.",
+          "default": "background-blend-mode : normal;",
+          "apply": "background",
+          "version": "CSS1",
+          "use": "★★☆",
+          "grammar" : "background-blend-mode : normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity",
+          "definition": [
+              "background-blend-mode 속성은 배경을 혼합했을 때의 상태를 설정합니다.",
+              "blend-mode는 크게 background-blend-mode와 mix-blend-mode로 설정됩니다.",
+              "포토샵의 브렌드 모드와 동일한 효과입니다."
+          ],
+          "property" : {
+              "normal" : "배경색의 기본 값을 정의합니다.",
+              "multiply" : "배경의 혼합 상태를 multiply(어둡게)으로 정의합니다.",
+              "screen" : "배경의 혼합 상태를 screen(밝게)으로 정의합니다.",
+              "overlay" : "배경의 혼합 상태를 overlay으로 정의합니다.",
+              "darken" : "배경의 혼합 상태를 darken으로 정의합니다.",
+              "lighten" : "배경의 혼합 상태를 lighten으로 정의합니다.",
+              "color-dodge" : "배경의 혼합 상태를 color-dodge으로 정의합니다.",
+              "color-burn" : "배경의 혼합 상태를 color-burn으로 정의합니다.",
+              "difference" : "배경의 혼합 상태를 difference으로 정의합니다.",
+              "exclusion" : "배경의 혼합 상태를 exclusion으로 정의합니다.",
+              "hue" : "배경의 혼합 상태를 hue으로 정의합니다.",
+              "saturation" : "배경의 혼합 상태를 saturation으로 정의합니다.",
+              "color" : "배경의 혼합 상태를 color으로 정의합니다.",
+              "luminosity" : "배경의 혼합 상태를 luminosity으로 정의합니다."
+          }
+      },
+      {
+          "id": 19,
+          "title": "<background-clip>",
+          "desc1": "background-clip 속성은 백그라운드 이미지의 위치 기준점을 설정하기 위한 속성입니다.",
+          "desc2": "background-clip 속성은 백그라운드 이미지의 위치 기준점을 설정하기 위한 속성입니다.",
+          "default": "background-clip : border-box;",
+          "apply": "background",
+          "version": "CSS1",
+          "use": "★☆☆",
+          "grammar" : "background-clip : border-box | padding-box | content-box | text",
+          "definition": [
+              "background-clip 속성은 백그라운드 이미지의 위치 기준점을 설정하기 위한 속성입니다.",
+              "clip은 걸다, 끼우다의 뜻으로 background-clip 배경 이미지를 어디에 설정하지를 설정합니다.",
+              "background-clip 기준점은 보더(border), 패딩(padding), 컨텐츠, 텍스트(text)에 설정할 수 있습니다.",
+              "텍스트(text)속성은 베타 버전이기 때문에 접두사(-webkit)을 표현해야 합니다.(2021년 기준)"
+          ],
+          "property" : {
+              "border-box" : "백그라운드 속성이 테두리 영역까지 포함하여 표현됩니다.",
+              "padding-box" : "백그라운드 속성이 테두리 영역을 제외하여 표현됩니다.",
+              "content-box" : "백그라운드 속성이 내부 컨텐츠 영역까지 표현됩니다.",
+              "text" : "텍스트 영역에 백그라운드 이미지가 표현됩니다."
+          }
+      },
+      {
+          "id": 20,
+          "title": "<background-color>",
+          "desc1": "background-color 속성은 백그라운드 색을 설정합니다.",
+          "desc2": "background-color 속성은 백그라운드 색을 설정합니다.",
+          "default": "background-color : transparent",
+          "apply": "background",
+          "version": "CSS1",
+          "use": "★★★",
+          "grammar" : "background-color : color | transparent",
+          "definition": [
+              "background-color 속성은 백그라운드 색을 설정합니다."
+          ],
+          "property" : {
+              "color" : "background-color를 설정합니다.",
+              "transparent" : "background-color를 투명하게 설정합니다."
+          }
+      },
+      {
+          "id": 21,
+          "title": "<background-image>",
+          "desc1": "background-image 속성은 백그라운드 이미지 및 배경 속성을 설정합니다.",
+          "desc2": "background-image 속성은 백그라운드 이미지 및 배경 속성을 설정합니다.",
+          "default": "background-image : transparent",
+          "apply": "background",
+          "version": "CSS1",
+          "use": "★★★",
+          "grammar" : "background-image : url | none",
+          "definition": [
+              "background-image 속성은 백그라운드 이미지 및 배경 속성을 설정합니다.",
+              "background-image 속성은 다중 이미지를 익스플로러9 이상부터 지원됩니다."
+          ],
+          "property" : {
+              "url" : "background-image 주소를 설정합니다.",
+              "none" : "background-image를 설정하지 않습니다.",
+              "linear-gradient" : "선형 그라데이션 백그라운를 설정합니다.",
+              "radial-gradient" : "원형 그라데이션 백그라운를 설정합니다.",
+              "repeating-linear-gradient" : "반복 선형 그라데이션 백그라운를 설정합니다.",
+              "repeating-radial-gradient" : "반복 원형 그라데이션 백그라운를 설정합니다."
+          }
+      }
+
       ]
     }
   }
