@@ -57,6 +57,13 @@ class Reference extends React.Component {
                         refer = {refer}
                     />   
                 ))
+                default :
+                return refers.htmlRefer.map((refer,index)=>(
+                    <ReferInfo
+                        key = {index}
+                        refer = {refer}
+                    />   
+                )) 
         }
             
     }
