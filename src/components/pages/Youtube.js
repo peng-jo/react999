@@ -12,8 +12,7 @@ import YoutubeList from '../info/YoutubeList'
 import YoutubeSearch from '../info/YoutubeSearch';
 import {gsap} from "gsap";
 
-const SECRET_KEY = process.env.REACT_APP_KEY;
-console.log(SECRET_KEY)
+
 
 function Youtube(){
     const [videos, setVideos] = useState([]);
@@ -43,7 +42,7 @@ function Youtube(){
             redirect: 'follow'
           };
           
-        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${SECRET_KEY}&maxResults=30&type=video`, requestOptions)
+        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${process.env.REACT_APP_KEY}&maxResults=30&type=video`, requestOptions)
             .then(response => response.json())
             // .then(result => console.log(result.items))
             .then(result => {
@@ -58,7 +57,7 @@ function Youtube(){
             redirect: 'follow'
           };
           
-          fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=javascript&key=${SECRET_KEY}&maxResults=30&type=video`, requestOptions)
+          fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=javascript&key=${process.env.REACT_APP_KEY}&maxResults=30&type=video`, requestOptions)
             .then(response => response.json())
             // .then(result => console.log(result.items))
             .then(result => {

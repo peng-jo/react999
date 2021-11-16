@@ -60,7 +60,7 @@ class Reference extends React.Component {
                 ))
             case 'JAVASCRIPT' :
                 return refers.jsRefer.map((refer,index)=>(
-                    <ReferInfo2
+                    <ReferInfo3
                         key = {index}
                         refer = {refer}
                     />   
@@ -77,6 +77,7 @@ class Reference extends React.Component {
     }
 
     onClick = (e) =>{
+        e.preventDefault();
         this.setState({select:e.target.textContent})
     }
 
