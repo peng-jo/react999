@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 function ReferInfo3({refer}){
     const  {id, title, desc2, returns} = refer;
+  
 
     return (
         <div>
@@ -25,7 +26,7 @@ ReferInfo3.propTypes = {
         id: PropTypes.number.isRequired,
         title: PropTypes.string.isRequired,
         desc2: PropTypes.string.isRequired,
-        returns: PropTypes.string,
+        returns: PropTypes.string.isRequired,
         syntax: PropTypes.string.isRequired,
         definition: PropTypes.array.isRequired,
         link: PropTypes.string.isRequired

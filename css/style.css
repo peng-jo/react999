@@ -477,6 +477,23 @@
   font-display: swap;
 }
 
+:root {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
 /* border-box 초기화 */
 *,
 *:before,
@@ -733,6 +750,130 @@ select {
 
 .pt200 {
   padding-top: 200px;
+}
+
+#loading.loading-active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+  opacity: 1;
+}
+
+#loading {
+  opacity: 0;
+  -webkit-transition: all 1.6s;
+  transition: all 1.6s;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.black .loading-text span {
+  color: #fff;
+}
+
+.white .loading-text span {
+  color: #000;
+}
+
+#loading.loading-active.white {
+  background: #F0EEEB;
+}
+
+#loading.loading-active.white .loading-text span {
+  color: #000;
+}
+
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+          animation: blur-text 1.5s 0s infinite linear alternate;
+}
+
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+          animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+          animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+          animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+          animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+          animation: blur-text 1.5s 1s infinite linear alternate;
+}
+
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+          animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
 }
 
 .container {
@@ -1153,18 +1294,25 @@ select {
 }
 
 .refer__cont .table {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
   margin-top: 1.2rem;
 }
 
 .refer__cont .table h3 {
+  font-size: 20px;
+  margin: 10px;
+  display: inline-block;
   padding-bottom: 10px;
+}
+
+.refer__cont .table h3.active {
+  color: red;
 }
 
 .refer__cont .table li {
   margin: 0;
   list-style: none;
-  border-top: 1px solid #000;
+  border-top: 1px solid #fff;
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1172,7 +1320,7 @@ select {
 }
 
 .refer__cont .table li:hover {
-  background: rgba(0, 0, 0, 0.081);
+  background: rgba(255, 255, 255, 0.081);
 }
 
 .refer__cont .table li span {
@@ -1195,11 +1343,11 @@ select {
 }
 
 .refer__cont .table li span:nth-child(3) {
-  width: 75%;
+  width: 63%;
 }
 
 .refer__cont .table li span:nth-child(4) {
-  width: 8%;
+  width: 15%;
 }
 
 .refer__detail {
@@ -1229,6 +1377,7 @@ select {
 
 .refer__detail table td,
 .refer__detail table th {
+  color: #fff;
   font-weight: normal;
   padding: 14px 12px 12px 12px;
   line-height: 1.5;
@@ -1317,4 +1466,82 @@ select {
 #youtubeCont {
   background-color: #000;
   color: #fff;
+}
+
+.youtube__cont .youtube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 200px;
+}
+
+.youtube__cont .youtube div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 19%;
+          flex: 0 0 19%;
+}
+
+.youtube__cont .youtube div .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-family: "S-CoreDream-3Light";
+  margin: 10px 0 50px;
+}
+
+.youtube__cont .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.youtube__cont .search input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 79%;
+          flex: 0 0 79%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  font-family: "S-CoreDream-3Light";
+  padding: 15px 10px;
+  outline: #fff;
+  color: #fff;
+}
+
+.youtube__cont .search input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.youtube__cont .search input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.youtube__cont .search input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.youtube__cont .search input::placeholder {
+  color: #fff;
+}
+
+.youtube__cont .search button {
+  font-family: "S-CoreDream-3Light";
+  background: transparent;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: bold;
 }

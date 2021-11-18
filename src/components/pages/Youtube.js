@@ -12,6 +12,7 @@ import YoutubeList from '../info/YoutubeList'
 import YoutubeSearch from '../info/YoutubeSearch';
 import {gsap} from "gsap";
 
+require('dotenv').config()
 
 
 function Youtube(){

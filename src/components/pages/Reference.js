@@ -77,8 +77,13 @@ class Reference extends React.Component {
     }
 
     onClick = (e) =>{
-        e.preventDefault();
+        document.querySelectorAll('.table h3').forEach((el, index)=>{
+            el.classList.remove('active');
+        })
+        e.target.classList.add('active')
+        
         this.setState({select:e.target.textContent})
+        
     }
 
     componentDidMount(){
@@ -103,7 +108,7 @@ class Reference extends React.Component {
                                     <WrapTitle text={['Reference','book']}/>  
                                     <div className="refer__cont">
                                        <div className="table">
-                                           <h3 onClick={this.onClick}>HTML</h3><h3 onClick={this.onClick}>CSS</h3><h3 onClick={this.onClick}>JAVASCRIPT</h3>
+                                           <h3 className="active" onClick={this.onClick}>HTML</h3><h3 onClick={this.onClick}>CSS</h3><h3 onClick={this.onClick}>JAVASCRIPT</h3>
                                             <ul>
                                                 {
                                                     this.renderSwitch(refers, select)
@@ -125,6 +130,12 @@ class Reference extends React.Component {
 }
 
 ReferInfo.propTypes = {
+    refer : PropTypes.object.isRequired
+}
+ReferInfo2.propTypes = {
+    refer : PropTypes.object.isRequired
+}
+ReferInfo3.propTypes = {
     refer : PropTypes.object.isRequired
 }
 

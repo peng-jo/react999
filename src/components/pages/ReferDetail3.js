@@ -59,8 +59,8 @@ class ReferDetail3 extends React.Component {
                                     <h4>정의(Definition)</h4>
                                     <ul>
                                         {
-                                            definition.map((def)=>(
-                                                <li key={def.toString()}>{def}</li>
+                                            definition.map((def,index)=>(
+                                                <li key={index}>{def}</li>
                                             ))
                                         }
                                     </ul>

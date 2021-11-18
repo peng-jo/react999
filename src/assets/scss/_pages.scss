@@ -104,7 +104,14 @@
         margin-top: 1.2rem;
         
         h3 {
+            font-size: 20px;
+            margin: 10px;
+            display: inline-block;
             padding-bottom: 10px;
+            
+        }
+        h3.active {
+            color: red;
         }
         
         li {
