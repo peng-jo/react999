@@ -1,10 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 function PortInfo({id, title, category, link, image}){
+    console.log(link)
     return (
         <div className="port">
-            <Link to={link}>
+            <a href={link}>
                 <div className="pImg">
                     <img src={image} alt={title}/>
                 </div>
@@ -12,7 +13,7 @@ function PortInfo({id, title, category, link, image}){
                     <h3>{title}</h3>
                     <p>{category}</p>
                 </div>
-            </Link>
+            </a>
         </div>
     )
 }

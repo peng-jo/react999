@@ -18,6 +18,7 @@ class ReferDetail extends React.Component {
         if( location.state === undefined ){
             history.push('./reference');
         }
+        window.scrollTo(0, 0);
     }
 
     render(){
